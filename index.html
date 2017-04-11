@@ -37,18 +37,76 @@
 		</div>
 
 		<div class="clear"></div>
-	</div>
-		<div class="breadcums">
-<div id="bread" >
-<a href="#personalProfile" style="padding: 9px">Personal Profile</a>
-<t>
- <a href="#WorkExperience"  style="padding: 9px">Work Experience </a>
- <a href="#Education" style="padding: 9px">Education</a>
- <a href="#Publications" style="padding: 9px">Publications</a>
- <a href="#OtherSkills" style="padding: 9px">Other Skills</a>
+
+
+
+
+<nav id="nav" role="navigation">
+  <!--  <a href="#nav" title="Show navigation">Show navigation</a>
+    <a href="#" title="Hide navigation">Hide navigation</a>-->
+    <ul>
+        <li><a href="#personalProfile">Personal Profile</a></li>
+        <li>
+            <a href="#WorkExperience" aria-haspopup="true">Work Experience</a>
+            <ul>
+
+
+                <li><a href="#eLod">Programmer at Linked Economy</a></li>
+                <li><a href="#oaed">Manpower Organization</a></li>
+                <li><a href="#teach">Teacher</a></li>
+                <li><a href="#military">Military Service</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Publications">Publications</a></li>
+	 <li><a href="#OtherSkills">Other Skills</a></li>
+
+    <!-- <li>
+            <a href="/" aria-haspopup="true">Work</a>
+            <ul>
+                <li><a href="/">Web Design</a></li>
+                <li><a href="/">Typography</a></li>
+                <li><a href="/">Front-End</a></li>
+            </ul>
+        </li>
+        <li><a href="/">About</a></li>-->
+    </ul>
+</nav>
+
+
+
+
+
+<!--
+
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn"><a href="#personalProfile">Personal Profile</a></button>
 
 </div>
+<div class="dropdown" style="float:left;">
+   <button class="dropbtn"><a href="#WorkExperience"  style="padding: 9px">Work Experience </a></button>
+	<div class="dropdown-content" style="left:0;">
+   	<a href="#">Link w1</a>
+  	<a href="#">Link 2</a>
+  	<a href="#">Link 3</a>
 </div>
+</div>
+<div class="dropdown" style="float:left;">
+ <button class="dropbtn"><a href="#Education" style="padding: 9px">Education</a></button>
+</div>
+<div class="dropdown" style="float:left;">
+<button class="dropbtn"><a href="#OtherSkills" style="padding: 9px">Other Skills</a></button>
+</div>
+<div class="dropdown" style="float:left;">
+   <button class="dropbtn"><a href="#Education" style="padding: 9px">Education</a></button>
+</div>
+
+
+	
+	</div>
+-->
+	<br>	
 	<div id="mainArea" class="quickFade delayFive">
 		<section>
 			<article>
@@ -71,7 +129,7 @@
 			
 			<div class="sectionContent">
 				<article>
-					<h2>Programmer at <a href="http://linkedeconomy.org/">Linked Economy</a></h2>
+				<div id="eLod">	<h2>Programmer at <a href="http://linkedeconomy.org/">Linked Economy</a></h2></div>
 					<p class="subDetails">April 2015 -present</p>
 					<p>Member of the University of Piraeus research team with the colaboration of the Greek National Centre of Scientific Research “Demokritos”, titled Linked Economy.<br>
 				The activity of this group is to create connections between different open data, mainly of economic interest that exist on the Internet. My contribution is mainly the Web Scrapping / Harvesting of data and the transformation to machine readable data and in some cases the transferring to a database, which often required the creation of complex schemas.
@@ -99,7 +157,7 @@
 				</article>
 				
 				<article>
-					<h2>Five month program of Manpower Organization (OAED) in Kilkis Perfecture</h2>
+					<div id="oaed"><h2>Five month program of Manpower Organization (OAED) in Kilkis Perfecture</h2></div>
 					<p class="subDetails">January 2014-May 2014</p>
 					<p>During my employment on this public sector office, I was assigned a number of duties in the office, such as filing, data entering and various IT issues.
 I also had the chance of creating a Visual Basic application, with a PostgreSQL database, which has helped the employees to fulfil their duties faster, reliable and with an amount of security. 
@@ -107,7 +165,7 @@ I also had the chance of creating a Visual Basic application, with a PostgreSQL 
 				</article>
 				
 				<article>
-					<h2>Teacher</h2>
+					<div id="teach"><h2>Teacher</h2></div>
 					<p class="subDetails">2005-2011</p>
 					<p>Teacher in a number of schools and educational institutes, such as public I.E.K., High school, Lyceums and Colleges of English universities in Greece.</p>
 				</article>
@@ -136,7 +194,7 @@ I also had the chance of creating a Visual Basic application, with a PostgreSQL 
 
 
 <article>
-					<h2>Military National Service.</h2>
+					<div id="military"><h2>Military National Service.</h2></div>
 					<p class="subDetails">January 2002-July 2002</p>
 				</article>
 
