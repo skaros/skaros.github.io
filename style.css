@@ -280,8 +280,8 @@ font-size:100%;color: #222;
 #headshot img {
 	width: 100%;
 	height: auto;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
 }
 
 #name {
